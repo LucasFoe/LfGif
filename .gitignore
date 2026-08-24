@@ -1,0 +1,45 @@
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.env
+.env.*
+
+# Test, coverage, and type-checker output
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.mypy_cache/
+.pyright/
+
+# Logs and generated media
+*.log
+/result/
+/work/result/
+
+# PyInstaller and packaging output
+/build/
+/dist/
+/work/build/
+/work/dist/
+*.spec
+*.egg-info/
+
+# Local tooling and operating-system files
+.idea/workspace.xml
+.idea/**/workspace.xml
+.idea/httpRequests/
+.idea/shelf/
+.DS_Store
+Thumbs.db
+Desktop.ini
+
