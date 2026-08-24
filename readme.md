@@ -91,7 +91,9 @@ The reference image is utilized in the processing as follows:
 
 The aligned and cropped images are then used as frames in the animated GIF.
 
+# License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
 
