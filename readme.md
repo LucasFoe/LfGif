@@ -56,12 +56,36 @@ The `gengif.py` program effectively processes a set of images by aligning them, 
 
 # Installation
 
-The ZIP archive `gengif.zip` contains a fully functional working directory, structured as described above, along with sample data. Its contents can be placed in any location.
+## Windows (x64) - Prebuilt Executable
 
+The ZIP archive `gengif.zip` contains a fully functional working directory, structured as described above, along with sample data. Its contents can be placed in any location.
 - `gengif.exe`: An executable file with no external dependencies, generated using *PyInstaller* with the command `pyinstaller --onefile 'gengif.py'`.
 - `gengif.ini`: Settings (only one parameter: `duration`). The duration parameter in the gengif.ini file specifies the time each frame is displayed in the animated GIF, measured in milliseconds. This parameter allows you to control the speed of the animation. For example, a duration of 400 means each frame will be displayed for 400 milliseconds before moving to the next frame.
 - Folder img anf refimg: Sample images for testing the program.
 - Folder result: Output directory for generated animated GIFs.
+
+## Windows (x64) - Building from Source
+To build `gengif.exe` from the source code:
+1. Ensure Python 3 (x64) is installed.
+2. Run `gengif.cmd` in the project root directory.
+3. The generated executable will be placed in `dist/gengif.exe`.
+
+## Other Platforms (Linux / macOS)
+
+Python source code is cross-platform, but the prebuilt `gengif.exe` binary runs only on Windows (x64). 
+
+For other operating systems:
+1. Ensure Python 3.8+ is installed.
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run or package the application:
+   - **Run directly**: `python src/gengif.py`
+   - **Build a native executable**: Run PyInstaller on the target operating system:
+     ```bash
+     pyinstaller --onefile --name stitch src/gengif.py
+     ``` 
 
 # Usage
 
